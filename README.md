@@ -11,7 +11,9 @@ Ce projet vise à créer une plateforme web complète dédiée aux passionnés d
 - Section Actualités et Articles (En tant qu'utilisateur, je veux accéder aux dernières actualités et articles sur l'industrie automobile pour rester informé des dernières innovations et lancements de nouveaux modèles)
 - Couverture de Course ( En tant que fan de courses automobiles, je souhaite voir les résultats en direct, les classements et des analyses approfondies des événements de course pour suivre mes compétitions préférées)
 - Calendrier d'Événements (En tant qu'enthousiaste d'événements automobiles, je veux consulter un calendrier des événements à venir (salons, courses, meet-ups) afin de planifier ma participation ou mon suivi de ces événements)
-- Forums de Discussion (En tant qu'utilisateur, je veux soumettre mon propre contenu, tel que des articles, des photos, et des vidéos, pour partager ma passion et mes connaissances avec la communauté)
+- Forums de Discussion (En tant que membre de la communauté, je désire participer à des forums de discussion pour échanger sur mes véhicules préférés, des conseils de mécanique, ou des expériences de course)
+- Système de Connexion et d'Inscription ( En tant qu'utilisateur, je souhaite pouvoir créer un compte et me connecter à la plateforme)
+  
 ## Technologies Used
 - Front-end : HTML5, CSS3, JavaScript (React ou Angular pour des interfaces utilisateurs dynamiques)
 - Back-end : Node.js avec Express pour la logique côté serveur, Python avec Django comme alternative
