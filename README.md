@@ -17,7 +17,7 @@ Ce projet vise à créer une plateforme web complète dédiée aux passionnés d
 ## Technologies 
 - Front-end : HTML5, CSS3, JavaScript (React ou Angular pour des interfaces utilisateurs dynamiques)
 - Back-end : Node.js avec Express pour la logique côté serveur, Python avec Django comme alternative
-- Base de données : MongoDB pour un stockage de données flexible, PostgreSQL pour des données structurées
+- Base de données : **[MongoDB](https://www.mongodb.com/)** pour un stockage de données flexible, PostgreSQL pour des données structurées
 - Authentification : OAuth pour des mécanismes de connexion sécurisés
 - APIs : Intégration d'APIs tierces pour des données de course en direct et des informations sur les véhicules
 
@@ -38,7 +38,7 @@ Par la suite passez sur le port 3000 sur le Browser.
 **[ReactJS](https://reactjs.org/)** est requis pour pouvoir exécuter cette application. C'est le front end de l'app. Pour installer tous les modules nécessaires au fonctionnement de notre jeu, exécutez la commande suivante :
 
 ```bash
-npm install
+npm installs
 ```
 Puis pour lancer l'applica(ion coté front lancez la commande :
 ```bash
