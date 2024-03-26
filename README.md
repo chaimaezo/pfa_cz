@@ -14,7 +14,7 @@ Ce projet vise à créer une plateforme web complète dédiée aux passionnés d
 - Forums de Discussion (En tant que membre de la communauté, je désire participer à des forums de discussion pour échanger sur mes véhicules préférés, des conseils de mécanique, ou des expériences de course)
 - Système de Connexion et d'Inscription ( En tant qu'utilisateur, je souhaite pouvoir créer un compte et me connecter à la plateforme)
   
-## Technologies Used
+## Technologies 
 - Front-end : HTML5, CSS3, JavaScript (React ou Angular pour des interfaces utilisateurs dynamiques)
 - Back-end : Node.js avec Express pour la logique côté serveur, Python avec Django comme alternative
 - Base de données : MongoDB pour un stockage de données flexible, PostgreSQL pour des données structurées
@@ -34,6 +34,7 @@ npm start
 ```
 
 Par la suite passez sur le port 3000 sur le Browser.
+
 **[ReactJS](https://reactjs.org/)** est requis pour pouvoir exécuter cette application. C'est le front end de l'app. Pour installer tous les modules nécessaires au fonctionnement de notre jeu, exécutez la commande suivante :
 
 ```bash
