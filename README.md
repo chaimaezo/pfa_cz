@@ -21,6 +21,22 @@ Ce projet vise à créer une plateforme web complète dédiée aux passionnés d
 - Authentification : OAuth pour des mécanismes de connexion sécurisés
 - APIs : Intégration d'APIs tierces pour des données de course en direct et des informations sur les véhicules
 
+## Installation et Execution de l'application web
+Node.js est requis pour pouvoir exécuter cette application. C'est le back end de l'app. Pour installer tous les modules nécessaires au fonctionnement de notre jeu, exécutez la commande suivante :
+
+npm install
+Puis pour lancer l'applica(ion coté back lancez la commande :
+
+npm start
+Par la suite passez sur le port 3000 sur le Browser.
+
+ReactJS est requis pour pouvoir exécuter cette application. C'est le front end de l'app. Pour installer tous les modules nécessaires au fonctionnement de notre jeu, exécutez la commande suivante :
+
+npm install
+Puis pour lancer l'applica(ion coté front lancez la commande :
+
+npm start
+Par la suite passez sur le port 3001 sur le Browser.
 
 ## Application Release Date
 
