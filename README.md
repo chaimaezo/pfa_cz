@@ -48,4 +48,5 @@ npm start
 Par la suite passez sur le port 3001 sur le Browser.
 
 ## Application Release Date
+La plateforme sera disponible le 1er Septembre 2024 , Tenez vous prêt !
 
