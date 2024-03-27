@@ -1,5 +1,5 @@
 # Development of an Interactive Automotive and Racing Information Platform with Community Engagement
-##Plateforme pour les Passionnés de Voitures
+## Plateforme pour les Passionnés de Voitures
 
 ## Aperçu du Projet
 Ce projet vise à créer une plateforme web complète dédiée aux passionnés d'automobile et aux fans de course. Elle servira de point central pour des informations détaillées sur les véhicules, les dernières nouvelles automobiles, la couverture d'événements de course, et un espace communautaire dynamique pour les discussions et le partage de contenu.
