@@ -41,7 +41,7 @@ Par la suite passez sur le port 3000 sur le Browser.
 ```bash
 npm install
 ```
-Puis pour lancer l'applica(ion coté front lancez la commande :
+Puis pour lancer l'application coté front lancez la commande :
 ```bash
 npm start
 ```
