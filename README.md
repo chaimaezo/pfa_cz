@@ -39,7 +39,7 @@ Par la suite passez sur le port 3000 sur le Browser.
 **[ReactJS](https://reactjs.org/)** est requis pour pouvoir exécuter cette application. C'est le front end de l'app. Pour installer tous les modules nécessaires au fonctionnement de notre jeu, exécutez la commande suivante :
 
 ```bash
-npm installs
+npm install
 ```
 Puis pour lancer l'applica(ion coté front lancez la commande :
 ```bash
