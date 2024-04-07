@@ -29,7 +29,7 @@ Ce projet vise à créer une plateforme web complète dédiée aux passionnés d
 ```bash
 npm install
 ```
-Puis pour lancer l'applica(ion coté back lancez la commande :
+Puis pour lancer l'application coté back lancez la commande :
 ```bash
 npm start
 ```
