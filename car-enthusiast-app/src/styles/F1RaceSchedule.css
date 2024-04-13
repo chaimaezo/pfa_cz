@@ -1,0 +1,59 @@
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set font styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Page container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Race schedule list */
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0074D9;
+    transition: color 0.2s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Header */
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  }
+  

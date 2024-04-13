@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './styles/F1RaceSchedule.css';
 
 function F1RaceSchedule() {
   const [races, setRaces] = useState([]);
