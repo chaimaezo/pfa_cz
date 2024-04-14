@@ -8,12 +8,12 @@ Ce projet vise à créer une plateforme web complète dédiée aux passionnés d
 - Chaimae Zolati
 
 ## **Fonctionnalités** :
-###Fonctionnalités Principales:
+### Fonctionnalités Principales:
 - Base de Données de Véhicules Recherchable (En tant qu'utilisateur, je souhaite pouvoir rechercher des véhicules par marque, modèle, ou catégorie (comme sportive, classique, hypercar) afin de trouver des informations spécifiques sur un véhicule qui m'intéresse.)
 - Couverture de Course ( En tant que fan de courses automobiles, je souhaite voir le calendrier , les résultats en direct, les classements et des analyses approfondies des événements de course pour suivre mes compétitions préférées, comme F1, NASCAR ...)
 - Système de Connexion et d'Inscription ( En tant qu'utilisateur, je souhaite pouvoir créer un compte et me connecter à la plateforme)
 
-###Fonctionnalités à ajouter plutard:
+### Fonctionnalités à ajouter plutard:
 - Calendrier d'Événements (En tant qu'enthousiaste d'événements automobiles, je veux consulter un calendrier des événements à venir (salons, courses, meet-ups) afin de planifier ma participation ou mon suivi de ces événements)
 - Forums de Discussion (En tant que membre de la communauté, je désire participer à des forums de discussion pour échanger sur mes véhicules préférés, des conseils de mécanique, ou des expériences de course)
 - Section Actualités et Articles (En tant qu'utilisateur, je veux accéder aux dernières actualités et articles sur l'industrie automobile pour rester informé des dernières innovations et lancements de nouveaux modèles)
