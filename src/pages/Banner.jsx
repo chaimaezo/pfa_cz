@@ -2,6 +2,7 @@ import React , {useContext , useState} from 'react';
 import './banner.css';
 import { AppContext } from '../App';
 import SlideBtn from '../components/SlideBtn';
+import CircleBar from '../components/CircleBar';
 
 function Banner() {
     const {data:cars , setData:setCars} = useContext(AppContext); 
@@ -44,7 +45,14 @@ function Banner() {
                                 </div>
                                 <div className="col-lg-8 p-0 banner-top-right">
                                     <div className="banner-img">
-                                        <img src={car.bannerImg} alt="" className="img-fluid" />
+                                        <img src= {car.bannerImg} alt="" className="img-fluid active"/>
+                                        <video className="banner-video" src={car.video} autoPlay loop muted></video>
+                                        <div className="car-brief">
+                                            <div className="car-intro">
+                                                <CircleBar name="Power" number={car.power} color="var(--race-car-red:)"/>
+                                            </div>
+                                            <div className="car-nav"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
