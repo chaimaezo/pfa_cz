@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+/*------------------------------
+#General 
+-------------------------------*/
+* { 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Car Enthusiast Theme Colors */
+  --jet-black: #343434;
+  --metallic-silver: #C0C0C0;
+  --race-car-red: #D40000;
+  --asphalt-gray: #505050;
+  --deep-red: #9b01019f;
+  --deep-cyan:#103d3f;
+  /* Motorsport Theme Colors */
+  --ferrari-red: #FF2800;
+  --nitrous-blue: #1F8AFA;
+  --carbon-fiber-black: #292929;
+  --safety-yellow: #FFD300;
+  --track-white: #FFFFFF;
+}
+
+
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto' , sans-serif;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+a {
+  color: var(--metallic-silver);
+  text-decoration: none;
+  cursor:pointer;
+  transition : 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  font-family: 'Roboto' , sans-serif ;
+}
