@@ -1,0 +1,18 @@
+.slide-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 120px; 
+    width: 120px;
+    background: var(--asphalt-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: aliceblue;
+    z-index: 9000;
+}
+
+.slide-btn:hover{
+    background: var(--deep-cyan);
+}
