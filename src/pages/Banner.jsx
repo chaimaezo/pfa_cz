@@ -49,7 +49,9 @@ function Banner() {
                                         <video className="banner-video" src={car.video} autoPlay loop muted></video>
                                         <div className="car-brief">
                                             <div className="car-intro">
-                                                <CircleBar name="Power" number={car.power} color="var(--race-car-red:)"/>
+                                                <CircleBar name="Power" number={car.power} color="var(--race-car-red)"/>
+                                                <CircleBar name="Engine" number={car.engine} color="var(--deep-red)"/>
+                                                <CircleBar name="New" number={car.new} color="var(--nitrous-blue)"/>
                                             </div>
                                             <div className="car-nav"></div>
                                         </div>

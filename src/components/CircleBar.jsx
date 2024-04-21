@@ -10,7 +10,7 @@ function CircleBar( {number , name , color}) {
                 style={
                     {
                         stroke:color,
-                        strokeDashoffset: `calc(440 - (440* ${number})/100)`
+                        strokeDashoffset: `calc(440 - (440 * ${number})/100)`
                     }
                 }
             >
