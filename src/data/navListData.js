@@ -20,6 +20,12 @@ const navListData = [
     },
     {
         _id: 4,
+        Link: '/Services',
+        name: 'Services',
+        active: false,
+    },
+    {
+        _id: 5,
         Link: '/contact',
         name: 'Contact',
         active: false,

@@ -8,6 +8,7 @@ import React, {useState , useEffect} from 'react';
 import './App.css';
 import Banner from './pages/Banner';
 import Header from './components/Header';
+import Vehicles from './pages/Vehicles';
 
 export const AppContext = React.createContext(); 
 
@@ -33,6 +34,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Banner />} />
+          <Route exact path="/vehicles" element ={<Vehicles />} />
         </Routes>
       </AppContext.Provider>
     </>

@@ -81,7 +81,7 @@ function Banner() {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link>
+                                                    <Link to="/vehicles">
                                                         More Vehicles <i className="bi bi-arrow-right-short"></i>
                                                     </Link>
                                                 </li>
