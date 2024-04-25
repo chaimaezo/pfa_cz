@@ -70,7 +70,7 @@ function Banner() {
                                             </div>
                                             <div className="car-nav">
                                                 <li>
-                                                    <Link>
+                                                    <Link to ={`/vehicles/${car._id}`}>
                                                         Details <i className="bi bi-arrow-right-short"></i>
                                                     </Link>
                                                 </li>

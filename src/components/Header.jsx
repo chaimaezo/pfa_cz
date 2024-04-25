@@ -2,6 +2,7 @@ import React ,{useState} from 'react'
 import './header.css';
 import navListData from '../data/navListData';
 import NavListItem from './NavListItem';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [open , setOpen] = useState(false);
@@ -26,11 +27,11 @@ function Header() {
           Vehicle
         </a>
         <div>
-            <a href="#" className="like">
+            <Link to="/library" className="like">
               <i className="bi bi-heart-fill"></i>
               <span className='likeNumbers'>0</span>
 
-            </a>
+            </Link>
             <a href="#" className="menu" onClick={handleToggleMenu}>
               {open ? <i className="bi bi-x-lg"></i> :<i className="bi bi-list"></i>}{/*switching between buttons (menu et like) */}
             </a>

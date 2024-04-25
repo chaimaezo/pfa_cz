@@ -1,9 +1,11 @@
 import React from 'react';
-import '.vehicleDetails.css';
+import { useParams } from 'react-router-dom';
+import './vehicleDetails.css';
 
 function VehicleDetails() {
+  const { id } = useParams();
   return (
-    <div>VehicleDetails</div>
+    <div>VehicleDetails - ID :  {id}</div>
   )
 }
 
