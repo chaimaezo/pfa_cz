@@ -219,3 +219,7 @@
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+.slide .car-features .detail-link:hover{
+    background: var(--deep-red);
+}
