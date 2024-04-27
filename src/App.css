@@ -54,3 +54,31 @@ h6,
 p{
   font-family: 'Roboto' , sans-serif ;
 }
+
+/**********General page style*****/
+
+.page{
+  position : relative;
+  width:100%;
+  padding:0;
+  transition: 0.5s;
+  padding-bottom:50px;
+}
+
+.page-img{
+  position : relative;
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  background: var(--carbon-fiber-black); 
+}
