@@ -2,11 +2,12 @@ import React ,{useState} from 'react'
 import './header.css';
 import navListData from '../data/navListData';
 import NavListItem from './NavListItem';
-import { Link } from 'react-router-dom';
+import { useLocation , Link } from 'react-router-dom';
 
 function Header() {
   const [open , setOpen] = useState(false);
   const [navList , setNavList] = useState(navListData);
+  const location = useLocation();
 
   const handleToggleMenu =()=> {
     setOpen(!open);
@@ -23,7 +24,13 @@ function Header() {
   
   return (
     <header>
-        <a href="/" className="logo">
+        <a 
+          href="/"
+          className="logo" 
+          style={location.pathname === "/" 
+          ? {color : '#000000'} 
+          : {color :'#ffffff'}
+        }> {/* title color variation*/}
           Vehicle
         </a>
         <div>

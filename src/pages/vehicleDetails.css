@@ -1,0 +1,48 @@
+.vehicle-details{
+    padding-bottom: 0;
+}
+
+.vehicle-details::before {
+    position: absolute ;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 33.33%;
+    height: 60vh;
+    background : var(--metallic-silver);
+}
+
+.details-left ,
+.details-middle,
+.details-right{
+    position: relative;
+}
+
+.details-img-left{
+    position: relative;
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+    object-position : center;
+}
+
+.vehicle-details .price{
+    position: relative;
+    font-family: 'Racing Sans One' , cursive;
+    font-size: 800;
+    color : #ffffff;
+    font-size : 3rem;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin-top : 40px;
+}
+
+.price span{
+    position : absolute;
+    font-size : 1.5rem;
+    left :50% ;
+    transform : translateX(-50%);
+    top : -20px;
+    
+}
