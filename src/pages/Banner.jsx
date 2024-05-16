@@ -2,7 +2,7 @@ import React , {useContext , useState} from 'react';
 import './banner.css';
 import { AppContext } from '../App';
 import SlideBtn from '../components/SlideBtn';
-import CircleBar from '../components/CircleBar';
+import CarSpecs from '../components/CarSpecs';
 import { Link } from 'react-router-dom';
 
 function Banner() {
@@ -13,7 +13,7 @@ function Banner() {
         setVideo(!video);
     }
     const handleSlideChange = ind=> {
-        if(ind>=4){
+        if(ind>=8){
             ind=-1;
         };
 
@@ -34,7 +34,7 @@ function Banner() {
             cars.length>0 &&
             /*when adding more cars data we have to edit here */
             
-            cars.slice(0 , 5).map( (car, index)=>(
+            cars.slice(0 , 9).map( (car, index)=>(
                     <div 
                         key={car._id} 
                         className={`slide ${car.active ? 'active' : undefined}`}
@@ -43,7 +43,7 @@ function Banner() {
                             <div className="row banner-top">
                                 <div className="col-lg-4 p-0 banner-top-left">
                                     <div className="banner-title">
-                                        <h1>Get Your Dream {car.make} </h1>
+                                        <h1>Explore Your Dream {car.make} </h1>
                                         <span className='slide-number'>0{car._id}</span>
                                     </div>
                                     <SlideBtn index={index} slideChange= {handleSlideChange}/>
@@ -64,9 +64,8 @@ function Banner() {
                                         </video>
                                         <div className="car-brief">
                                             <div className="car-intro">
-                                                <CircleBar name="Power" number={car.power} color="var(--race-car-red)"/>
-                                                <CircleBar name="Engine" number={car.engine} color="var(--deep-red)"/>
-                                                <CircleBar name="New" number={car.new} color="var(--nitrous-blue)"/>
+                                                <CarSpecs car={car} />
+
                                             </div>
                                             <div className="car-nav">
                                                 <li>
