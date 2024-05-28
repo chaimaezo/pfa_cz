@@ -16,7 +16,7 @@ function Header() {
   const handleNavOnclick = id =>{
     const newNavList = navList.map(nav =>{
       nav.active = false;
-      if (nav._id == id) nav.active = true;
+      if (nav._id === id) nav.active = true;
       return  nav;
     });
     setNavList(newNavList);

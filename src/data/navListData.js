@@ -17,19 +17,7 @@ const navListData = [
         Link: '/MotoSport',
         name: 'MotoSport',
         active: false,
-    },
-    {
-        _id: 4,
-        Link: '/Services',
-        name: 'Services',
-        active: false,
-    },
-    {
-        _id: 5,
-        Link: '/contact',
-        name: 'Contact',
-        active: false,
-    },
+    }
 ];
     
 export default navListData;

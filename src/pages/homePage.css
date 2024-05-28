@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .home-page {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: slideshow 15s infinite; /* 15s for three images, adjust accordingly */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Keyframes for slideshow */
+  @keyframes slideshow {
+    0% {
+      background-image: url('/public/assets/vehicles/lamborghini-1.jpg');
+    }
+    33% {
+      background-image: url('/public/assets/vehicles/lamborghini-1.jpg');
+    }
+    34% {
+      background-image: url('/public/assets/f1/audi-f1-22.avif');
+    }
+    66% {
+      background-image: url('/public/assets/f1/audi-f1-22.avif');
+    }
+    67% {
+      background-image: url('/public/assets/f1/images.jpg');
+    }
+    100% {
+      background-image: url('/public/assets/f1/images.jpg');
+    }
+  }
+  
+  .home-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    z-index: 1;
+  }
+  
+  .home-page .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section {
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Racing Sans One', cursive; /* Car-themed font */
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Navigation Buttons */
+  .nav-buttons .nav-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid white;
+  }
+  
+  .nav-buttons .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .nav-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

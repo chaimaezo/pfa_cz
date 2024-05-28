@@ -6,13 +6,12 @@ import {Routes , Route} from 'react-router-dom';
 import React, {useState , useEffect} from 'react';
 
 import './App.css';
-import Banner from './pages/Banner';
+import VehiclesList from './pages/VehiclesList';
 import Header from './components/Header';
-import Vehicles from './pages/Vehicles';
+import MotorsportsPage from './pages/MotorsportsPage';
+import HomePage from './pages/HomePage';
+import Banner from './pages/Banner';
 import VehicleDetails from './pages/VehicleDetails';
-import Library from './pages/Library';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
 
 
 export const AppContext = React.createContext(); 
@@ -20,6 +19,7 @@ export const AppContext = React.createContext();
 
 function App() {
   const [data , setData] = useState([])
+  const [selectedCar, setSelectedCar] = useState(null);
 
   const fetchData = ()=> {
     fetch('http://localhost:3000/api/vehiclesData.json')
@@ -35,15 +35,14 @@ function App() {
 
   return (
     <>
-      <AppContext.Provider value={{data, setData}}>
+      <AppContext.Provider value={{data, setData, selectedCar, setSelectedCar}}>
         <Header />
         <Routes>
-          <Route exact path="/" element={<Banner />} />
-          <Route exact path="/vehicles" element ={<Vehicles />} />
-          <Route exact path="/vehicles/:id" element ={<VehicleDetails />} />
-          <Route exact path="/library" element={<Library />} />
-          <Route exact path="/services" element={<Services />} />
-          <Route exact path="/contact" element={<Contact />}  />
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/vehicles" element ={<VehiclesList />} />
+          <Route exact path="/vehicles/:id" element ={<Banner />} />
+          <Route exact path="/vehicle-details/:id" element={<VehicleDetails />} /> 
+          <Route exact path="/MotoSport" element={<MotorsportsPage />} />
         </Routes>
       </AppContext.Provider>
     </>
