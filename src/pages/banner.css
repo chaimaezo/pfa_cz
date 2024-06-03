@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: var(--track-white);
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -5,22 +15,23 @@
     padding: 0;
     transition: 0.5s;
     overflow-x: hidden;
+    background: var(--jet-black);
 }
 
-.slide{
+.slide {
     position: absolute;
-    top:0;
+    top: 0;
     right: -100%;
     width: 100%;
     height: 100%;
     opacity: 0;
     visibility: hidden;
     transition: 1s;
-    overflow-y:scroll ;
+    overflow-y: scroll;
 }
 
-.slide.active{
-    right:  0;
+.slide.active {
+    right: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -30,48 +41,50 @@
     position: relative;
 }
 
-.slide .banner-title{
+.slide .banner-title {
     height: 65vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 50px;
-    transform:   translateX(300px);
+    transform: translateX(300px);
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-    transition-delay:0.5s ;
+    transition-delay: 0.5s;
+    text-align: left;
 }
 
-.slide.active .banner-title{
-    transform:   translateX(0);
+.slide.active .banner-title {
+    transform: translateX(0);
     visibility: visible;
     opacity: 1;
 }
 
-.slide .banner-title h1{
-    font-family: 'Racing Sans One' , cursive;
-    font-size: 4.5rem;
+.slide .banner-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.55rem;
     line-height: 1;
+    color: var(--track-white);
+    text-shadow: 2px 2px 4px var(--carbon-fiber-black);
+    margin: 0;
 }
 
 .slide .slide-number {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    height:120px;
-    width: calc(100% - 120px);
-    font-family: 'Racing Sans One' , cursive;
-    color : var(--asphalt-gray);
-    display: flex;
-    justify-content: center;
-    font-size: 6rem;
-    font-weight : 800;
+    top: 20px;
+    right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--safety-yellow);
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px var(--carbon-fiber-black);
 }
 
-.slide img{
+.slide img {
     width: 100%;
-    object-fit : cover;
+    object-fit: cover;
     object-position: center;
     transform: scale(0);
     transition: 1s;
@@ -90,7 +103,7 @@
     object-position: center;
 }
 
-.banner-video.active{
+.banner-video.active {
     display: block;
 }
 
@@ -100,71 +113,72 @@
     display: block;
 }
 
-.slide .banner-top img{
-    height : 65vh;
+.slide .banner-top img {
+    height: 65vh;
     display: none;
 }
 
-/*** info circles ****/
-
-.slide .car-brief{
-    position : absolute;
-    height: 120px;
-    width: 100%;
-    left : 0;
+.slide .car-brief {
+    position: absolute;
     bottom: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--track-white);
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.slide .car-brief .car-intro{
-    position : relative;
-    padding-top: 10px;
+.slide .car-brief .car-intro {
+    position: relative;
     width: 50%;
-    background: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    transform:   translateY(50px);
+    padding: 10px;
+    transform: translateY(50px);
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-    transition-delay:1s ;
+    transition-delay: 1s;
 }
 
-.slide.active .car-brief .car-intro{
+.slide.active .car-brief .car-intro {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
 }
 
-.slide .car-brief .car-nav{
-    position : relative;
+.slide .car-brief .car-nav {
+    position: relative;
     width: 50%;
     height: 120px;
     display: flex;
-    backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 20px 0;
     gap: 10px;
-    list-style : none;
+    list-style: none;
 }
 
-.slide .car-brief .car-nav li a{
-    font-size : 1.1rem;
+.slide .car-brief .car-nav li a {
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
+    color: var(--safety-yellow);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.slide .car-brief .car-nav li a:hover{
-    color: var(--asphalt-gray);
+.slide .car-brief .car-nav li a:hover {
+    color: var(--deep-cyan);
 }
 
-.slide .banner-bottom img{
-    height:35vh;
+.slide .banner-bottom img {
+    height: 35vh;
 }
 
 .slide .car-description {
@@ -178,19 +192,22 @@
     visibility: hidden;
     transition: 0.5s;
     transition-delay: 0.75s;
-    gap:30px;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }
 
-.slide.active .car-description{
+.slide.active .car-description {
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
 }
 
-.slide .car-description h2{
-    font-family: 'Racing Sans One' , cursive;
+.slide .car-description h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     text-transform: uppercase;
+    color: var(--asphalt-gray);
 }
 
 .slide .car-features {
@@ -198,28 +215,33 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap:15px;
+    gap: 15px;
     flex-direction: column;
 }
 
-.slide .car-description p{
+.slide .car-description p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     font-weight: 400;
     line-height: 1.2;
     margin: 0;
+    color: var(--asphalt-gray);
 }
 
-.slide .car-features .detail-link{
+.slide .car-features .detail-link {
     background: var(--deep-cyan);
     border: 0;
     padding: 8px 25px;
-    color: white;
+    color: var(--track-white);
     transition: 0.3s;
-    width: 150 px;
+    width: 150px;
     font-size: 1.1rem;
     font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.slide .car-features .detail-link:hover{
+.slide .car-features .detail-link:hover {
     background: var(--deep-red);
 }

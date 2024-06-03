@@ -1,0 +1,71 @@
+/* src/pages/MotorsportsPage.css */
+.motorsports-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    background: url('/public/assets/f1/audi-f1-22.avif') no-repeat center center;
+    background-size: cover;
+    color: var(--metallic-silver);
+    position: relative;
+    z-index: 1;
+  }
+
+  .motorsports-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Add a dark overlay */
+    z-index: -1;
+  }
+  
+  .motorsports-page h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .motorsports-page .introduction {
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
+  .motorsports-page .btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: var(--track-white);
+    background-color: var(--race-car-red);
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .motorsports-page .btn:hover {
+    transform: scale(1.1);
+    background-color: var(--deep-red);
+  }
+  
+  .motorsports-page .btn i {
+    margin-left: 10px;
+  }
+  
+  .motorsports-page .btn-secondary {
+    background-color: var(--deep-cyan);
+  }
+  
+  .motorsports-page .btn-secondary:hover {
+    background-color: var(--jet-black);
+  }

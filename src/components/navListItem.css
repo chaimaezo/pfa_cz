@@ -44,3 +44,16 @@
 .nav li a.active{
     color : var(--deep-red);
 }
+
+.nav-link {
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+.nav-link:hover {
+    color: var(--deep-red);
+}
+  

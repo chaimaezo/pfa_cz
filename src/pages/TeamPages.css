@@ -1,0 +1,94 @@
+.team-pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px;
+    background: url('/public/assets/f1/audi-f1-22.avif') no-repeat center center;
+    background-size: cover;
+    color: var(--metallic-silver);
+    position: relative;
+    z-index: 1;
+  }
+ 
+  
+  .team-pages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Add a dark overlay */
+    z-index: -1;
+  }
+  
+  .team-pages h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-card {
+    border: 2px solid var(--metallic-silver);
+    padding: 20px;
+    margin: 10px;
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    background: var(--deep-cyan);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--asphalt-gray);
+  }
+  
+  .team-card img.team-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--track-white);
+  }
+  
+  .team-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--metallic-silver);
+  }
+  
+  .team-card .btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--track-white);
+    background-color: var(--race-car-red);
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .team-card .btn:hover {
+    background-color: var(--deep-red);
+  }
+  
+  .team-card .btn i {
+    margin-left: 10px;
+  }
+  

@@ -32,6 +32,8 @@ function Banner() {
     return <div>Loading...</div>;
   }
 
+  const slideNumber = selectedCar._id < 10 ? `0${selectedCar._id}` : selectedCar._id;
+
   return (
     <div className="banner">
       <div className="slide active">
@@ -40,7 +42,7 @@ function Banner() {
             <div className="col-lg-4 p-0 banner-top-left">
               <div className="banner-title">
                 <h1>Explore Your Dream {selectedCar.make}</h1>
-                <span className='slide-number'>0{selectedCar._id}</span>
+                <span className='slide-number'>{slideNumber}</span>
               </div>
               <SlideBtn index={cars.indexOf(selectedCar)} slideChange={handleSlideChange} />
             </div>

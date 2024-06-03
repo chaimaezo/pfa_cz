@@ -1,0 +1,69 @@
+/* src/pages/profile.css */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #f9f9f9; /* Optional: light background for the entire page */
+  }
+  
+  .profile {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* White background for the profile box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .profile p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .profile p strong {
+    color: #333;
+  }
+  
+  .profile a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .profile a:hover {
+    text-decoration: underline;
+  }
+  
+  .change-password-form {
+    margin-top: 20px;
+  }
+  
+  .change-password-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .change-password-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .change-password-form button:hover {
+    background-color: #0056b3;
+  }
+  

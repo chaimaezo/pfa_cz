@@ -14,4 +14,4 @@ function CarSpecs({ car }) {
 }
 
 
-export default CarSpecs
+export default CarSpecs;

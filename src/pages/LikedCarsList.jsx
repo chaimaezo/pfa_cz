@@ -1,42 +1,32 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../App.js';
 import './VehiclesList.css';
 import SearchBar from '../components/SearchBar';
 
-const VehiclesList = () => {
-  const { data: cars, setSelectedCar, likedCars = [], setLikedCars } = useContext(AppContext); // Provide default value for likedCars
-  const [filteredCars, setFilteredCars] = useState(cars);
+const LikedCarsList = () => {
+  const { likedCars, setSelectedCar } = useContext(AppContext);
   const navigate = useNavigate();
+  const [filteredCars, setFilteredCars] = useState(likedCars);
 
   useEffect(() => {
-    setFilteredCars(cars);
-  }, [cars]);
+    setFilteredCars(likedCars);
+  }, [likedCars]);
 
   const handleCarClick = (carId) => {
-    const car = cars.find(c => c._id === carId);
+    const car = likedCars.find(c => c._id === carId);
     setSelectedCar(car);
     navigate(`/vehicles/${car._id}`);
   };
 
   const handleSearch = (filters) => {
     const { brand, model, category } = filters;
-    const filtered = cars.filter(car => 
+    const filtered = likedCars.filter(car => 
       (brand === '' || car.make.toLowerCase().includes(brand.toLowerCase())) &&
       (model === '' || car.model.toLowerCase().includes(model.toLowerCase())) &&
       (category === '' || car.category.toLowerCase().includes(category.toLowerCase()))
     );
     setFilteredCars(filtered);
-  };
-
-  const handleLike = (car) => {
-    setLikedCars(prevLikedCars => {
-      if (prevLikedCars.some(likedCar => likedCar._id === car._id)) {
-        return prevLikedCars.filter(likedCar => likedCar._id !== car._id);
-      } else {
-        return [...prevLikedCars, car];
-      }
-    });
   };
 
   return (
@@ -54,12 +44,9 @@ const VehiclesList = () => {
               <h5 className="vehicle-name">{car.model}</h5>
               <button
                 className="like-button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleLike(car);
-                }}
+                onClick={(e) => e.stopPropagation()}
               >
-                <i className={`bi bi-heart${likedCars.some(likedCar => likedCar._id === car._id) ? '-fill' : ''}`}></i>
+                <i className="bi bi-heart-fill"></i>
               </button>
             </div>
           </div>
@@ -69,4 +56,4 @@ const VehiclesList = () => {
   );
 };
 
-export default VehiclesList;
+export default LikedCarsList;

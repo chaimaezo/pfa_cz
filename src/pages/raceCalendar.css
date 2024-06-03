@@ -1,0 +1,87 @@
+.race-calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px;
+    background: url('/public/assets/f1/audi-f1-22.avif') no-repeat center center;
+    background-size: cover;
+    color: var(--metallic-silver);
+    position: relative;
+    z-index: 1;
+  }
+  
+ 
+.race-calendar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Add a dark overlay */
+    z-index: -1;
+  }
+  
+  .race-calendar h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  
+  .calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .race-item {
+    border: 2px solid var(--metallic-silver);
+    padding: 20px;
+    margin: 10px;
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    background: var(--deep-cyan);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .race-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--asphalt-gray);
+  }
+  
+  .race-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--track-white);
+  }
+  
+  .race-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--metallic-silver);
+  }
+  
+  .race-item .btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--track-white);
+    background-color: var(--race-car-red);
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .race-item .btn:hover {
+    background-color: var(--deep-red);
+  }
+  
+  .race-item .btn i {
+    margin-left: 10px;
+  }
