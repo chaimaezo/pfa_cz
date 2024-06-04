@@ -4,14 +4,14 @@ import './TeamPages.css';
 const constructorLogos = {
   "Mercedes": "/assets/f1-logos/mercedes-logo.png",
   "Red Bull": "/assets/f1-logos/redbull-logo.png",
-  "Ferrari": "/assets/f1-logos/ferrari-logo.jpg",
-  "McLaren": "/assets/f1-logos/mclaren.png",
+  "Ferrari": "/assets/f1-logos/ferrari.avif",
+  "McLaren": "/assets/f1-logos/mclaren-logo.png",
   "Alpine F1 Team": "/assets/f1-logos/Alpine_logo.png",
-  "Sauber": "/assets/f1-logos/alphatauri.png",
-  "Aston Martin": "/assets/f1-logos/astonmartin.png",
+  "Sauber": "/assets/f1-logos/kicksauber.avif",
+  "Aston Martin": "/assets/f1-logos/astonmartin-logo.jpeg",
   "Williams": "/assets/f1-logos/williams-logo.png",
-  "RB": "/assets/f1-logos/alfaromeo.png",
-  "Haas F1 Team": "/assets/f1-logos/haas.png"
+  "RB F1 Team": "/assets/f1-logos/rb.avif",
+  "Haas F1 Team": "/assets/f1-logos/haas-logo.png"
 };
 
 const TeamPages = () => {
@@ -21,11 +21,12 @@ const TeamPages = () => {
     fetch('https://ergast.com/api/f1/2024/constructors.json')
       .then(response => response.json())
       .then(data => {
+
         const teamData = data.MRData.ConstructorTable.Constructors.map(constructor => ({
           name: constructor.name,
           nationality: constructor.nationality,
           url: constructor.url,
-          logo: constructorLogos[constructor.name] || '/assets/f1-logos/default.png'
+          logo: constructorLogos[constructor.name] || '/assets/f1-logos/default.*'
         }));
         setTeams(teamData);
       })

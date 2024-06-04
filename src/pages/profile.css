@@ -1,69 +1,81 @@
-/* src/pages/profile.css */
 .profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Full height of the viewport */
-    background-color: #f9f9f9; /* Optional: light background for the entire page */
-  }
-  
-  .profile {
-    max-width: 600px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff; /* White background for the profile box */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .profile h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .profile p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .profile p strong {
-    color: #333;
-  }
-  
-  .profile a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .profile a:hover {
-    text-decoration: underline;
-  }
-  
-  .change-password-form {
-    margin-top: 20px;
-  }
-  
-  .change-password-form input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .change-password-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .change-password-form button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/public/assets/vehicles/mclaren-3-3.jpg') no-repeat center center fixed ;
+  background-size: cover;
+}
+
+.profile {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  color: #ffeba7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.profile h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.profile p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile a {
+  color: #ffeba7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.profile a:hover {
+  color: #c4c3ca;
+}
+
+.change-password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.change-password-form input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #c4c3ca;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #020305;
+  color: #ffeba7;
+}
+
+.change-password-form input::placeholder {
+  color: #c4c3ca;
+}
+
+.change-password-form button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffeba7;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.change-password-form button:hover {
+  background-color: #000;
+  color: #ffeba7;
+}
+
+.change-password-form p {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
