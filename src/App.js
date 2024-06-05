@@ -22,6 +22,8 @@ import { auth } from './firebase';
 import Profile from './pages/Profile';
 import RaceCalendar from './pages/RaceCalendar';
 import TeamPages from './pages/TeamPages';
+import F1Analysis from './pages/F1Analysis';
+import RecentConstructorsWins from './pages/RecentConstructorsWins';
 
 export const AppContext = React.createContext(); 
 
@@ -86,6 +88,8 @@ function App() {
                                                   } />
           <Route path="/race-calendar" element={<ProtectedRoute><RaceCalendar /></ProtectedRoute>} />
           <Route path="/team-pages" element={<ProtectedRoute><TeamPages /></ProtectedRoute>} />
+          <Route path="/f1-analysis" element={<ProtectedRoute><F1Analysis /></ProtectedRoute>} />
+          <Route path="/recent-constructors-wins" element={<ProtectedRoute><RecentConstructorsWins /></ProtectedRoute>} />
 
           <Route exact path="/liked-cars" element={
                                                   <ProtectedRoute>

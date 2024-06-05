@@ -16,6 +16,10 @@ const MotorsportsPage = () => {
       <Link to="/team-pages" className="btn btn-secondary">
         Team Pages <i className="bi bi-people"></i>
       </Link>
+      <Link to="/f1-analysis" className="btn btn-primary">
+        F1 Analysis <i className="bi bi-graph-up"></i>
+      </Link>
+
     </div>
   );
 };
